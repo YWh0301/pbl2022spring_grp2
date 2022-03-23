@@ -1,6 +1,6 @@
 # pbl2022spring_grp2
 
-~邮箱：2000011029@stu.pku.edu.cn~
+*邮箱：2000011029@stu.pku.edu.cn*
 
 ## 简介
 
