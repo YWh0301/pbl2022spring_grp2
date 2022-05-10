@@ -43,7 +43,7 @@ void setup()
 
 void loop()
 {
-    if (Serial.available()) //检查串口缓存区有没有输入新的指令
+    while(Serial.available()) //检查串口缓存区有没有输入新的指令
     {
         command = Serial.read();
     }
