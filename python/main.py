@@ -1,5 +1,6 @@
 import serial;
 import tkinter;
+import frame;
 
 serialPort = "COM4"  # 串口
 baudRate = 115200 # 波特率
