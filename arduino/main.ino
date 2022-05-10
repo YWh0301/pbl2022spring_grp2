@@ -43,7 +43,7 @@ void setup()
 
 void loop()
 {
-    while(Serial.available()) //检查串口缓存区有没有输入新的指令
+    while (Serial.available()) //检查串口缓存区有没有输入新的指令
     {
         command = Serial.read();
     }
@@ -80,7 +80,7 @@ void scan() //控制镜子转动扫描一次；根据当前镜子位置决定扫
         mirrorstatus = MAX_ANGLE;
         break;
     case MAX_ANGLE:
-        for (int i = END_VAL; i > END_VAL; i--) //如果镜子在最大角度就倒着扫描
+        for (int i = END_VAL - 1; i >= START_VAL; i--) //如果镜子在最大角度就倒着扫描
         {
             writeToDAC(i);
 
